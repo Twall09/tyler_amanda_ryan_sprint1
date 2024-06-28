@@ -1,0 +1,17 @@
+Gary Blue's Diner Website Design
+
+- Home page created by Tyler Wall
+- Menu page created by Amanda Halley
+- Order page created by Ryan Tibbo
+
+This project overall wasn't too bad. To help us, we used resources such as teacher materials,
+ChatGPT, and youtube videos. Everything seemed to work and fall into place, however, we had
+some difficulty with screen adjustments and form submissions. 
+
+For the screen adjustments, we tried multiple things so the page would adjust to different devices,
+however, it was difficult to get it to adjust to different screen sizes. For example, some of the pages,
+you may have to zoom out a little so everything lines up properly. The links and search bar should work 
+fine. 
+
+For the form submission, we used DOM and we were able to get a confirmation note on top of the page, along 
+with the title and features. However, our results would either show up as "null" or "HTMLParagraphElement". 

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Confirmation</title>
+  </head>
+  <body>
+    <h1>Order Confirmation</h1>
+    <div id="orderDetails">
+      <p><strong>Credit Card Information:</strong></p>
+      <p id="cardNumber"></p>
+      <p id="csv"></p>
+      <p id="expiryDate"></p>
+
+      <p><strong>Delivery Location:</strong></p>
+      <p id="address"></p>
+      <p id="postalCode"></p>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const urlParams = new URLSearchParams(window.location.search);
+        const cardNumber = urlParams.get("cardNumber");
+        const csv = urlParams.get("csv");
+        const expiryDate = urlParams.get("expiryDate");
+        const address = urlParams.get("address");
+        const postalCode = urlParams.get("postalCode");
+
+        const foodForm = urlParams.get("foodForm");
+      });
+
+      document.getElementById("cardNumber").textContent =
+        "Card Number: " + cardNumber;
+      document.getElementById("csv").textContent = "CSV: " + csv;
+      document.getElementById("expiryDate").textContent =
+        "Expiry Date: " + expiryDate;
+      document.getElementById("address").textContent = "Address: " + address;
+      document.getElementById("postalCode").textContent =
+        "Postal Code: " + postalCode;
+    </script>
+    <script src="./order.js"></script>
+  </body>
+</html>

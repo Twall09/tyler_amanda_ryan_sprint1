@@ -1,0 +1,289 @@
+.main {
+  height: auto;
+  padding: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.header ul {
+  display: flex;
+  align-items: center;
+}
+
+.nav ul {
+  display: flex;
+  align-items: center;
+}
+
+.nav ul li {
+  padding: 0 15px;
+  font-size: 15px;
+  font-weight: 600;
+  margin-left: 60px;
+}
+.header ul li:hover a {
+  background-color: white;
+  color: black;
+  text-decoration: underline;
+}
+.search input {
+  color: black;
+}
+@font-face {
+  font-family: "Kavoon";
+  src: url("path/to/your/font/Kavoon-Regular.ttf") format("truetype");
+  /* Add more src formats for cross-browser compatibility */
+}
+.food {
+  font-family: "Kavoon", sans-serif;
+  font-size: 24px;
+  color: white;
+}
+
+.foodbox input {
+  color: black;
+}
+.foodtype {
+  font-family: "Kavoon", sans-serif;
+  font-size: 32px;
+  text-decoration: underline;
+  color: white;
+  display: inline-block;
+}
+@font-face {
+  font-family: "Inter";
+  font-weight: bold;
+  src: url("path/to/your/font/Inter-Bold.ttf") format("truetype");
+  /* Add more src formats for cross-browser compatibility */
+}
+.placeorder {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 32px;
+  text-align: center;
+}
+.normal {
+  display: inline-block;
+}
+
+.container {
+  gap: 20px;
+  justify-content: center;
+}
+.container2 {
+  font-family: "Kavoon", sans-serif;
+}
+.container3 {
+  display: inline-block;
+
+  font-family: "Kavoon", sans-serif;
+}
+.box,
+.box2 {
+  width: 100%;
+
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.35);
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+}
+
+h3 {
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+.creditcard,
+.csv,
+.expiry .foodbox {
+  margin-bottom: 15px;
+}
+
+.creditcard input,
+.csv input,
+.expiry input {
+  color: black;
+}
+
+.creditcard h4,
+.csv h4,
+.expiry h4 {
+  margin: 0 0 5px 0;
+  font-weight: bold;
+}
+
+.postalcode,
+.address {
+  margin-bottom: 15px;
+}
+
+.address input,
+.postalcode input {
+  color: black;
+}
+
+.postalcode h4,
+.address h4 {
+  margin: 0 0 5px 0;
+  font-weight: bold;
+}
+
+.button {
+  margin-top: 15px;
+  text-align: right;
+}
+
+.button button {
+  padding: 10px 20px;
+  background: linear-gradient(black, grey);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.button button:hover {
+  background-color: black;
+}
+
+.footer {
+  color: white;
+  text-align: left;
+  padding-bottom: 10px;
+}
+
+@media (max-width: 1200px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav ul li {
+    margin-left: 0;
+    padding: 10px 0;
+  }
+
+  .container {
+    justify-content: center;
+  }
+
+  .box,
+  .box2 {
+    margin-bottom: 20px;
+  }
+
+  .container2 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    max-width: 768px;
+  }
+  .foodbox {
+    width: 100%;
+  }
+  .food {
+    justify-content: space-evenly;
+  }
+  .normal {
+    display: inline-block;
+    justify-content: space-evenly;
+  }
+}
+@media (max-width: 768px) {
+  .header ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container2 {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .foodtype {
+    font-size: 24px;
+  }
+
+  .food {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .placeorder {
+    font-size: 24px;
+  }
+
+  .foodtype {
+    font-size: 24px;
+  }
+
+  .food {
+    font-size: 20px;
+    justify-content: space-evenly;
+  }
+
+  .header ul,
+  .nav ul {
+    flex-direction: column;
+  }
+
+  .header ul li,
+  .nav ul li {
+    margin-left: 0;
+    padding: 5px 0;
+  }
+
+  .box,
+  .box2 {
+    padding: 5px;
+  }
+
+  .container2 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    max-width: 768px;
+  }
+  .foodbox {
+    width: 100%;
+  }
+  .normal {
+    display: inline-block;
+    justify-content: space-evenly;
+  }
+}

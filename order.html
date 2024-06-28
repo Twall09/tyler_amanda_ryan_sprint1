@@ -1,0 +1,417 @@
+<!-- // Description: Semester 2: Midterm Sprint Gary Blues Diner Home Page
+// Page completed by Tyler Wall
+// Group: Tyler Wall, Amanda Halley, Ryan Tibbo -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Kavoon&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="order.css" />
+
+    <link rel="shortcut icon" href="./images/logo.png" type="Image/x-icon" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gary Blue's Diner | Order</title>
+    <style type="text/css">
+      body {
+        background-image: url(images/Restaurant\ Background.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+
+      #searchinput {
+        transition: 0.3 ease-in-out;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <div class="logo">
+          <img
+            src="images/logo.png"
+            alt="logo image"
+            width="120px"
+            height="120px"
+          />
+        </div>
+        <nav class="nav">
+          <ul>
+            <li><a href="home.html" target="_blank">Home</a></li>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <li><a href="menu.html" target="_blank">Menu</a></li>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <li><a href="#">Contact</a></li>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </ul>
+        </nav>
+        <div class="account">
+          <ul>
+            <div class="search" id="searchinput">
+              <input
+                type="Search"
+                class="searchinput"
+                placeholder="Search Here.."
+                aria-label="Search"
+              />
+            </div>
+            <a href="#">
+              <li>
+                <i
+                  class="fa-solid fa-magnifying-glass searchicon"
+                  id="searchicon2"
+                  aria-label="true"
+                ></i>
+              </li>
+            </a>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section>
+        <div class="placeorder">Place your online order now!</div>
+      </section>
+      <hr />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <section>
+        <div class="foodtype">
+          <div class="container3">
+            <span class="normal"
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+            >
+            Appetizers
+            <span class="normal"
+              >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</span
+            >Main
+            <span class="normal"
+              >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</span
+            >Drinks<span class="normal"
+              >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</span
+            >Desserts
+          </div>
+        </div>
+        <br />
+        <br />
+        <hr />
+      </section>
+      <section>
+        <br />
+        <br />
+        <br />
+        <br />
+        <form id="foodForm" action="confirmation.html" method="post">
+          <div class="food">
+            <div class="container2">
+              <span class="normal"
+                >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+              >Potato Skins
+              <span class="normal"
+                >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+              ><span class="foodbox"
+                ><input
+                  type="number"
+                  id="potato"
+                  placeholder="Enter Quantity" /></span
+              ><span class="normal"
+                >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+              >Chicken Sandwich<span class="normal">&nbsp;&nbsp;</span
+              ><span class="foodbox"
+                ><input
+                  type="number"
+                  id="chickenSand"
+                  placeholder="Enter Quantity" /></span
+              ><span class="normal"
+                >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+              >
+              Classic Milkshake
+              <span class="normal"
+                >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+              ><span class="foodbox"
+                ><input
+                  type="number"
+                  id="milkshake"
+                  placeholder="Enter Quantity"
+              /></span>
+              <span class="normal"
+                >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+              >Brownie Sundae<span class="normal"
+                >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+              ><span class="foodbox"
+                ><input type="number" id="sundae" placeholder="Enter Quantity"
+              /></span>
+              <br />
+              <br />
+
+              <span class="normal"
+                >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+              >Buffalo Wings
+              <span class="normal"
+                >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+              ><span class="foodbox"
+                ><input
+                  type="number"
+                  id="bufWings"
+                  placeholder="Enter Quantity" /></span
+              ><span class="normal"
+                >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+              >BBQ Ribs
+              <span class="normal"
+                >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+              ><span class="foodbox"
+                ><input
+                  type="number"
+                  id="bbqRibs"
+                  placeholder="Enter Quantity" /></span
+              ><span class="normal"
+                >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+              >
+              Lemonade
+              <span class="normal"
+                >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+              ><span class="foodbox"
+                ><input
+                  type="number"
+                  id="lemonade"
+                  placeholder="Enter Quantity"
+              /></span>
+              <span class="normal"
+                >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+              >Banana Split<span class="normal"
+                >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+              ><span class="foodbox"
+                ><input type="number" id="bSplit" placeholder="Enter Quantity"
+              /></span>
+              <br />
+              <br />
+
+              <span class="normal"
+                >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+              >Spinach Dip
+              <span class="normal"
+                >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+              ><span class="foodbox"
+                ><input
+                  type="number"
+                  id="spinDip"
+                  placeholder="Enter Quantity" /></span
+              ><span class="normal"
+                >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+              >Ultimate Burger<span class="normal"
+                >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+              ><span class="foodbox"
+                ><input
+                  type="number"
+                  id="ultBurger"
+                  placeholder="Enter Quantity" /></span
+              ><span class="normal"
+                >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+              >
+              Iced Tea
+              <span class="normal"
+                >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+              ><span class="foodbox"
+                ><input type="number" id="iceTea" placeholder="Enter Quantity"
+              /></span>
+              <span class="normal"
+                >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+              >Classic Cheesecake<span class="normal">&nbsp;&nbsp;</span
+              ><span class="foodbox"
+                ><input
+                  type="number"
+                  id="cheeseCake"
+                  placeholder="Enter Quantity"
+              /></span>
+              <br />
+              <br />
+
+              <span class="normal"
+                >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+              >Mozzarella Sticks
+              <span class="normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+              ><span class="foodbox"
+                ><input
+                  type="number"
+                  id="mozzaSticks"
+                  placeholder="Enter Quantity"
+              /></span>
+              <span class="normal"
+                >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+              >Seafood Platter<span class="normal"
+                >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+              ><span class="foodbox"
+                ><input
+                  type="number"
+                  id="seaPlat"
+                  placeholder="Enter Quantity" /></span
+              ><span class="normal"
+                >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+              >
+              Fruit Punch
+              <span class="normal"
+                >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+              ><span class="foodbox"
+                ><input
+                  type="number"
+                  id="fruitPunch"
+                  placeholder="Enter Quantity"
+              /></span>
+              <span class="normal"
+                >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+              >Choc. Lava Cake<span class="normal"
+                >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+              ><span class="foodbox"
+                ><input
+                  type="number"
+                  id="lavaCake"
+                  placeholder="Enter Quantity" /></span
+              ><br />
+              <br />
+              <span class="normal"
+                >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+              >
+              <span class="normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+              <span class="normal"
+                >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+              >Chicken Parmesan<span class="normal">&nbsp;&nbsp;</span
+              ><span class="foodbox"
+                ><input
+                  type="number"
+                  id="chickParm"
+                  placeholder="Enter Quantity" /></span
+              ><span class="normal"
+                >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+              >
+              Tea/Coffee
+              <span class="normal"
+                >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+              ><span class="foodbox"
+                ><input
+                  type="number"
+                  id="teacoffee"
+                  placeholder="Enter Quantity"
+              /></span>
+              <span class="normal"
+                >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+              >Apple Pie<span class="normal"
+                >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+              ><span class="foodbox"
+                ><input
+                  type="number"
+                  id="applePie"
+                  placeholder="Enter Quantity"
+              /></span>
+            </div>
+          </div>
+        </form>
+      </section>
+      <br />
+      <br />
+      <br />
+      <br />
+      <hr />
+      <section>
+        <br />
+        <br />
+        <form id="infoForm" action="confirmation.html" method="post">
+          <div class="container">
+            <div class="box">
+              <h3>Credit Card Information:</h3>
+
+              <div class="creditcard">
+                <h4>Credit Card Number:</h4>
+                <input
+                  type="text"
+                  id="cardnumber"
+                  maxlength="16"
+                  placeholder="Enter Card #"
+                />
+              </div>
+              <div class="csv">
+                <h4>CSV:</h4>
+                <input
+                  type="text"
+                  id="csv"
+                  maxlength="3"
+                  placeholder="Enter CSV"
+                />
+              </div>
+              <div class="expiry">
+                <h4>Expiry Date (YY/MM):</h4>
+                <input
+                  type="text"
+                  id="expirydate"
+                  maxlength="5"
+                  placeholder="Enter Expiry Date"
+                />
+              </div>
+            </div>
+            <div class="box2">
+              <h3>Delivery Location:</h3>
+              <div class="address">
+                <h4>Street Address:</h4>
+                <input
+                  type="text"
+                  id="address"
+                  placeholder="Enter Street Address"
+                />
+              </div>
+              <div class="postalcode">
+                <h4>Postal Code:</h4>
+                <input
+                  type="text"
+                  id="csv"
+                  maxlength="6"
+                  placeholder="Enter Postal Code"
+                />
+              </div>
+              <div class="button">
+                <button type="submit" id="checkoutButton">
+                  <a href="./confirmation.html" target="_blank">Check Out</a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </section>
+      <br />
+      <hr />
+      <section>
+        <footer>
+          <div class="footer">
+            <a href="https://www.facebook.com" target="_blank"
+              ><img src="images/facebook_copy.png" Facebook logo
+            /></a>
+            <a href="https://instagram.com" target="_blank"
+              ><img src="images/Insta_copy.png" alt="Instagram logo"
+            /></a>
+            <a href="https://www.twitter.com" target="_blank">
+              <img src="images/twitter_copy.png" alt="Twitter logo"
+            /></a>
+            <span class="footertext"
+              >&#169;<i>Gary Blue's Diner est. 2024</i></span
+            >
+          </div>
+        </footer>
+
+        <hr />
+      </section>
+    </main>
+    <script src="./order.js"></script>
+  </body>
+</html>
